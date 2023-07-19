@@ -8,13 +8,21 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.d-flex
+.d-flex{
+  display: flex;
+}
+
+debug{
+  background-color: brown;
+  border: 1px solid black;
+}
 
 .container{
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   min-width: 300px;
   margin: 0px auto;
+  border: 1px solid black;
 }
 
 
@@ -24,7 +32,8 @@ body{
   width: 100%;
   background-color: orangered;
   position: fixed;
-  top: 0px;  
+  top: 0px; 
+  box-shadow: 0px 3px 5px gray; 
 }
 
 .menu .row{
@@ -54,6 +63,93 @@ body{
 
 .menu .row img{
 height: 55px;
-width: 16%;
+width: 26%;
 object-fit: cover;
+}
+
+/* fine header */
+
+/* inizio main */
+
+section{
+  height: auto;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section .carts{
+  height: auto;
+  width: 33%;
+  margin-top: 100px;
+  padding: 0px 5px;
+  border: 1px solid black;
+  position: relative;
+  cursor: pointer;
+ 
+}
+
+section .carts img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.discount{
+  background-color: red;
+  position: absolute;
+  left: 5px;
+  bottom:80px;
+  padding: 5px 8px;
+  color: white;
+  font-weight: 700;
+}
+
+.sustainability{
+  background-color: green;
+  color: white;
+  position: absolute;
+  left: 62px;
+  bottom: 80px;
+  padding: 5px 8px;
+  font-weight: 700;
+}
+
+.heart{
+  display: inline;
+  background-color: white;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  font-size:25px;
+  padding: 10px 15px;
+}
+
+.sustainability.last{
+  background-color: green;
+  color: white;
+  position: absolute;
+  left: 5px;
+  bottom: 80px;
+  padding: 5px 8px;
+  font-weight: 700
+}
+
+.garment{
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+
+.red{
+  color: red;
+  font-weight: 600;
+}
+
+.cut{
+  text-decoration-line: line-through;
+  margin-left: 10px;
+  font-weight: 500;
 }
