@@ -15,12 +15,11 @@ body{
 .container{
   width: 100%;
   max-width: 1000px;
-  min-width: 300px;
+  min-width: 500px;
   margin: 0px auto;
-  
 }
 
-
+/* inizo header */
 
 .menu{
   height: 80px;
@@ -42,9 +41,9 @@ body{
 }
 
 .row ul{
- display: flex;
- list-style: none;
- text-align: left;
+  display: flex;
+  list-style: none;
+  text-align: left;
 }
 
 .row li{
@@ -69,8 +68,6 @@ object-fit: cover;
 
 section{
   height: auto;
-  width: 100%;
-  
   display: flex;
   flex-wrap: wrap;
 }
@@ -78,10 +75,10 @@ section{
 section .carts{
   height: auto;
   width: 33%;
+  min-height: 50%;
   margin-top: 100px;
   padding: 0px 5px;
   position: relative;
-  cursor: pointer;
  
 }
 
@@ -89,6 +86,27 @@ section .carts img{
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.content:hover .img-curson{
+  display: block;
+  cursor: pointer;
+}
+
+.content .img-curson{
+  height: auto;
+  display: none;
+  width: 97%;
+  object-fit: cover;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  cursor: pointer;
+
+}
+
+.content:hover.img-curson{
+  display: block;
 }
 
 .discount{
@@ -123,6 +141,7 @@ section .carts img{
 
 :hover.heart{
   color: red;
+  
 }
 
 .sustainability.last{
@@ -147,12 +166,10 @@ section .carts img{
   font-weight: 600;
 }
 
-.cut{
-  text-decoration-line: line-through;
-  margin-left: 10px;
-  font-weight: 500;
-}
+/* fine main */
 
+
+/* inizio footer */
 
 .foot{
 height: 100px;
@@ -175,3 +192,5 @@ a{
   padding: 0px 4px;
   color: white;
 }
+
+/* fine footer */
